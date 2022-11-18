@@ -3,8 +3,14 @@ public class VariableExpense extends Expense{
 
     public void registerExpense(String name, String description, float value, byte priority) {
         this.name = name;
+        nameList.add(name);
+        
         this.value = value;
-        this.priority = priority;
+        valueList.add(value);
+
         this.description = description;
+        nameList.add(description);
+        
+        this.priority = priority;
     }
 }
