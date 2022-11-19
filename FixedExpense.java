@@ -1,6 +1,7 @@
 public class FixedExpense extends Expense {
+    private String payday;
     
-    public void registerExpense(String name, String description, float value) {
+    public void registerExpense(String name, String description, float value, String payday) {
         this.name = name;
         nameList.add(name);
         
@@ -9,5 +10,7 @@ public class FixedExpense extends Expense {
 
         this.description = description;
         descriptionList.add(description);
+
+        this.payday = payday;
     }
 }
