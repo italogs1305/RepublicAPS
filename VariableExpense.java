@@ -1,8 +1,11 @@
-public class VariableExpense extends Expense{
-    //attribute that allows certain expenses to be their cost shared among students
-    private byte priority;
+import java.util.ArrayList;
+import java.util.List;
 
-    public void registerExpense(String name, String description, float value, byte priority) {
+public class VariableExpense extends Expense{
+	protected byte priority;
+	List <Byte> priorityList = new ArrayList<>();
+
+    public void registerExpense(String name, String description, float value) {
         this.name = name;
         nameList.add(name);
         
@@ -12,6 +15,5 @@ public class VariableExpense extends Expense{
         this.description = description;
         nameList.add(description);
         
-        this.priority = priority;
     }
 }

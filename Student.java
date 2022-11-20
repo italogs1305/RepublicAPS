@@ -28,7 +28,6 @@ public class Student {
     public void deleteAccount(byte idStudent) {
         //idStudent will provide current array position to be deleted
         byte position = (byte) this.idStudent.indexOf(idStudent);
-
         nameList.remove(position);
         emailList.remove(position);
         incomeList.remove(position);
@@ -36,7 +35,7 @@ public class Student {
         this.idStudent.remove(position);
     }
 
-    public void emergencyDeposit(){
+    public void emergencyDeposit(Float income){
         taxStudent.add((float) (income * 0.05));
     }
 }
